@@ -42,6 +42,18 @@ Front-End teknolojileri
 3.JavaScript etkileşim kısmının ayarlanması.(Butona tıkla vs.)
 
 ### Front-End FrameWorks
+ HTML, CSS ve JavaScript'in temel şablonlarını içerir. 
 
+ :white_check_mark: Kullanıcı dostu arayüz oluşturma
 
-:white_check_mark: HTML, CSS ve JavaScript'in temel şablonlarını içerir. 
+ :white_check_mark: Mobil uyumluluk (Responsive Design )
+ 
+ :white_check_mark: Tarayıcı uyumluluğunu sağlar.
+
+ :white_check_mark: Hızlı ve Optimize edilmiş kod yazar.
+
+ Çeşitler
+ 
+ - :one:  React  Component (bileşen) tabanlı mimari.
+     
+     1. 
