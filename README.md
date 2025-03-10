@@ -19,76 +19,15 @@ gibi avantajları bulunmaktadır.
 Modern php uygulamaları oluşturmak için kullanılır.
 
 * Dil : PHP
-* MVC yapısıyla çalışır.
+* [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
 * OOP sistemine hakim olmak gerekir.
+* Açık Kaynak kodludur.
+* Ölçeklenebilirlik: Modüler yapı ve yerleşik araçlar ölçeklenebilir uygulama geliştirmeyi destekler.
 
-#### MVC NEDİR ? (Model-View-Controller)
- Yazılım geliştirmede kullanılan(özellikle webte) geliştirme patternidir.(Yazılım mimari deseni).
-![xBugor ][resim]
-
-[resim]: ./assets/mvc.jpg "Bugrahan"
-
-
-Modüler bir yaklaşım kullanarak yazlımı parçalara ayırıyoruz.Bu da bir bileşende yapılan değişiklikleri bağımsızlaştırır. Bu parçalar:
-
-* Model
-* View
-* Controller
-* User 
-
-### Model 
-
-1. Verinin yönetilmesi ve iş mantığının çalışmasını yönetir.
-2. Veritabanı ile iletişim kurar.
-3. Controllere veri sağlar.
-4. Validation işlemini gerçekleştirir.
-Örnek (Django Model - Python)
-
-### View
- Projelerimizde arayüzlerin oluştuğu bölüme view denir. Kullanıcının iletişim kuracağı ekrana view diyoruz.
-
-
- 1. Kullanıcıya verileri görüntüler
- 2. HTML ,CSS ,JavaScript  kullanarak görsel bir arayüz sunar.
-
-
-### Controller
-
- 1. Kullanıcıdan gelen istekler burda değerlendirilir. İsteğin detaylarına göre hangi işlemin yapılacağını seçer.(veri güncelleme gibi )
-
-2. Gerekli verileri Model’den alır, üzerinde işlem yapar ve View’e (görünüme) yönlendirir.
- View’e işlenmiş verileri iletir ve istemciye HTML, JSON veya başka bir formatta yanıt döndürülmesini sağlar.
-
-
-| Framework       | Programlama Dili | Kullanım Alanı          |
-|---------------|----------------|----------------------|
-| **Django**     | Python         | Web uygulamaları     |
-| **Laravel**    | PHP            | Web geliştirme      |
-| **Ruby on Rails** | Ruby        | Web & API geliştirme |
-| **Spring MVC** | Java           | Kurumsal uygulamalar |
-| **ASP.NET MVC** | C#            | Microsoft tabanlı web uygulamaları |
-
-
-
-
-
-
-
-Senaryo 
-Kullanıcı bir istek oluşturuyor (Request)
-Kullanıcı bir girdi oluşturduğu zaman bu girdiler Controllera geliyor.
-Bu veriler üzerinde ne yapılacağına lojik denir.
-Controller üzerinde Model(veritabanına) yapılacak bir işlem varsa yapar. Örneğin veri getirme veya kaydetme gibi
-Sonra bu veriler view ile kullanıcıya sunulur. Aşağıdaki diagramda bu senaryo anlatıldı.
-
-```mermaid
-sequenceDiagram
-    participant Kullanıcı
-    participant Controller
-    participant Model
-    participant View
-    Kullanıcı->>Controller: REQUEST 
-    Controller->>Model: Veriyi  getir
-    Model-->>Controller:  Veriyi döndür
-    Controller->>View: Ürünü HTML içinde göster
-    View-->>Kullanıcı: Sayfayı döndür
+* Güçlü bir topluluğa sahib olan laravel ilk defa öğrenmek isteyenler için [laracats](https://laracasts.com/)  adında bir platform kurmuştur eğtim alabilirsiniz.
+* **Object Relational** Mapping kullanarak çok karmaşık ve uzun sql komutlarını nesneye yönelik programlama kullanarak daha kısa ve verimli şekilde kullanmamıza olanak sağlar.(bknz: **Elequent ORM**)
+* Güvenlik: CLI komutlarını güvenli bir şekilde yürütmek için SSH (Güvenli Kabuk) kullanır.
+* **Blade Templating**:   HTML ve PHP kodlarını karıştırarak dinamik sayfalar oluşturur.
+* **Middleware (Ara Katman)**: Middleware, gelen HTTP isteklerini filtrelemeye olanak tanır.
+* **Migrations ve Seeding**: Laravel, veritabanı sürümlemeyi ve test amaçlı veritabanı verisi eklemeyi kolaylaştıran migration ve seeding özellikleri sunar.
+* **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
