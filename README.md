@@ -60,6 +60,13 @@ Modüler bir yaklaşım kullanarak yazlımı parçalara ayırıyoruz.Bu da bir b
  View’e işlenmiş verileri iletir ve istemciye HTML, JSON veya başka bir formatta yanıt döndürülmesini sağlar.
 
 
+| Framework       | Programlama Dili | Kullanım Alanı          |
+|---------------|----------------|----------------------|
+| **Django**     | Python         | Web uygulamaları     |
+| **Laravel**    | PHP            | Web geliştirme      |
+| **Ruby on Rails** | Ruby        | Web & API geliştirme |
+| **Spring MVC** | Java           | Kurumsal uygulamalar |
+| **ASP.NET MVC** | C#            | Microsoft tabanlı web uygulamaları |
 
 
 
@@ -72,3 +79,16 @@ Kullanıcı bir istek oluşturuyor (Request)
 Kullanıcı bir girdi oluşturduğu zaman bu girdiler Controllera geliyor.
 Bu veriler üzerinde ne yapılacağına lojik denir.
 Controller üzerinde Model(veritabanına) yapılacak bir işlem varsa yapar. Örneğin veri kaydetme gibi
+
+
+```mermaid
+sequenceDiagram
+    participant Kullanıcı
+    participant Controller
+    participant Model
+    participant View
+    Kullanıcı->>Controller: GET /product/1 isteği
+    Controller->>Model: Ürün bilgilerini getir
+    Model-->>Controller: Ürün verisini döndür
+    Controller->>View: Ürünü HTML içinde göster
+    View-->>Kullanıcı: Sayfayı döndür
