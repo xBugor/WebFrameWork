@@ -15,45 +15,60 @@ Böylece her defasında yeniden kod satırı oluşturmaya gerek kalmadan hızlı
 
 gibi avantajları bulunmaktadır.
 
-**Frameworkler kütüphaneleri kapsar.**
+## Laravel :
+Modern php uygulamaları oluşturmak için kullanılır.
 
-Frameworkler için şöyle bir cümle kullanılabilir. Yazılımcılar iskeleti yeniden icat etmek yerine siteyi oluşturmaya odaklanabilir.
+* Dil : PHP
+* MVC yapısıyla çalışır.
+* OOP sistemine hakim olmak gerekir.
+
+#### MVC NEDİR ? (Model-View-Controller)
+ Yazılım geliştirmede kullanılan(özellikle webte) geliştirme patternidir.(Yazılım mimari deseni).
+![xBugor ][resim]
+
+[resim]: ./assets/mvc.jpg "Bugrahan"
 
 
-Bilindiği üzere web geliştirme ikiye ayrılır:
+Modüler bir yaklaşım kullanarak yazlımı parçalara ayırıyoruz.Bu da bir bileşende yapılan değişiklikleri bağımsızlaştırır. Bu parçalar:
 
-1. Front-End (Önyüz) geliştirme
-2. Back-End (Arkayüz) geliştirme
+* Model
+* View
+* Controller
+* User 
 
-Bu yüzden web frame workleride ikiye ayrılırlar.
+### Model 
 
-### Front-End
-Kısaca,
-Front-End tarafı genel olarak daha görünüşe odaklı tasarımın yapıldığı kısma denilir.
+1. Verinin yönetilmesi ve iş mantığının çalışmasını yönetir.
+2. Veritabanı ile iletişim kurar.
+3. Controllere veri sağlar.
+4. Validation işlemini gerçekleştirir.
+Örnek (Django Model - Python)
 
-Web sitesinin butonları, tasarımları ve animasyonları Front-End tarafında yapılır.
+### View
+ Projelerimizde arayüzlerin oluştuğu bölüme view denir. Kullanıcının iletişim kuracağı ekrana view diyoruz.
 
-Front-End teknolojileri
 
-1.HTML sayfanın temel iskeletine denir.
+ 1. Kullanıcıya verileri görüntüler
+ 2. HTML ,CSS ,JavaScript  kullanarak görsel bir arayüz sunar.
 
-2.CSS sayfanın stilini düzenler.
 
-3.JavaScript etkileşim kısmının ayarlanması.(Butona tıkla vs.)
+### Controller
 
-### Front-End FrameWorks
- HTML, CSS ve JavaScript'in temel şablonlarını içerir. 
+ 1. Kullanıcıdan gelen istekler burda değerlendirilir. İsteğin detaylarına göre hangi işlemin yapılacağını seçer.(veri güncelleme gibi )
 
- :white_check_mark: Kullanıcı dostu arayüz oluşturma
+2. Gerekli verileri Model’den alır, üzerinde işlem yapar ve View’e (görünüme) yönlendirir.
+ View’e işlenmiş verileri iletir ve istemciye HTML, JSON veya başka bir formatta yanıt döndürülmesini sağlar.
 
- :white_check_mark: Mobil uyumluluk (Responsive Design )
- 
- :white_check_mark: Tarayıcı uyumluluğunu sağlar.
 
- :white_check_mark: Hızlı ve Optimize edilmiş kod yazar.
 
- Çeşitler
- 
- - :one:  React  Component (bileşen) tabanlı mimari.
-     
-     1. 
+
+
+
+
+
+
+Senaryo 
+Kullanıcı bir istek oluşturuyor (Request)
+Kullanıcı bir girdi oluşturduğu zaman bu girdiler Controllera geliyor.
+Bu veriler üzerinde ne yapılacağına lojik denir.
+Controller üzerinde Model(veritabanına) yapılacak bir işlem varsa yapar. Örneğin veri kaydetme gibi
