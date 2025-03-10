@@ -78,8 +78,8 @@ Senaryo
 Kullanıcı bir istek oluşturuyor (Request)
 Kullanıcı bir girdi oluşturduğu zaman bu girdiler Controllera geliyor.
 Bu veriler üzerinde ne yapılacağına lojik denir.
-Controller üzerinde Model(veritabanına) yapılacak bir işlem varsa yapar. Örneğin veri kaydetme gibi
-
+Controller üzerinde Model(veritabanına) yapılacak bir işlem varsa yapar. Örneğin veri getirme veya kaydetme gibi
+Sonra bu veriler view ile kullanıcıya sunulur. Aşağıdaki diagramda bu senaryo anlatıldı.
 
 ```mermaid
 sequenceDiagram
@@ -87,8 +87,8 @@ sequenceDiagram
     participant Controller
     participant Model
     participant View
-    Kullanıcı->>Controller: GET /product/1 isteği
-    Controller->>Model: Ürün bilgilerini getir
-    Model-->>Controller: Ürün verisini döndür
+    Kullanıcı->>Controller: REQUEST 
+    Controller->>Model: Veriyi  getir
+    Model-->>Controller:  Veriyi döndür
     Controller->>View: Ürünü HTML içinde göster
     View-->>Kullanıcı: Sayfayı döndür
