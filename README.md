@@ -31,3 +31,17 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * **Middleware (Ara Katman)**: Middleware, gelen HTTP isteklerini filtrelemeye olanak tanır.
 * **Migrations ve Seeding**: Laravel, veritabanı sürümlemeyi ve test amaçlı veritabanı verisi eklemeyi kolaylaştıran migration ve seeding özellikleri sunar.
 * **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
+
+
+## Codeignitor 
+
+* Dil : PHP
+* Hızlı ve hafiftir çünkü kütüphanesi daha az bellek tüketir.
+* Öğrenmesi basittir.PHP ye aşina olan herkes Codeignitoru rahatça kavrayabilir.
+* [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
+* Yüksek performanslı.
+* Basitleştirilmiş kod yapısı.
+* Gelişmiş Güvenlik Özelliklerine sahiptirç
+* Active Record sistemi kullanır.
+
+
