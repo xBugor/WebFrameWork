@@ -40,6 +40,9 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
 * Öğrenmesi zordur.
 * Büyük ve kurumsal işlemlerde rahatça kullanılabilir.
+* Düzenli güncellemeler
+* Yeniden kullanılabilir kod bileşenleri
+
 
 
 ## Codeignitor 
