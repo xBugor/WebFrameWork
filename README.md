@@ -15,7 +15,7 @@ Böylece her defasında yeniden kod satırı oluşturmaya gerek kalmadan hızlı
 
 gibi avantajları bulunmaktadır.
 
-## Laravel :
+## Laravel 
 Modern php uygulamaları oluşturmak için kullanılır.
 
 * Dil : PHP
@@ -31,6 +31,9 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * **Middleware (Ara Katman)**: Middleware, gelen HTTP isteklerini filtrelemeye olanak tanır.
 * **Migrations ve Seeding**: Laravel, veritabanı sürümlemeyi ve test amaçlı veritabanı verisi eklemeyi kolaylaştıran migration ve seeding özellikleri sunar.
 * **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
+## Symfony
+
+
 
 
 ## Codeignitor 
@@ -72,7 +75,7 @@ Cron job yazmaya gerek kalmadan zamanlanmış görevler tanımlanması.
 Yoğun işlemleri (örneğin e-posta gönderme, büyük veri işlemleri) kuyruğa alarak asenkron çalıştırabilir.
 Böylece performans artar.
 
-- **Authentication (Kimlik Doğrulama)**
+- **Authentication (Kimlik Doğrulama)** k
 Laravel’de kimlik doğrulama (authentication) yerleşik olarak gelir. Kullanıcı giriş-çıkışı, şifre sıfırlama, iki faktörlü kimlik doğrulama gibi işlemler kolayca yapılabilir.
 
 - **Blade Template Engine**
