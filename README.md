@@ -35,7 +35,11 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
 ## Symfony
 
-
+* Dil : PHP
+* **Modülerlik**: Symfony, bağımsız olarak kullanılabilen bir dizi bileşen sunar. Yani, sadece ihtiyaç duyduğunuz bileşenleri projeye dahil edebilirsiniz.
+* [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
+* Öğrenmesi zordur.
+* Büyük ve kurumsal işlemlerde rahatça kullanılabilir.
 
 
 ## Codeignitor 
@@ -89,7 +93,7 @@ Bu, PHP ve HTML’yi birleştirmeyi çok daha pratik hale getirir.
 |-----------|---------|
 |Genel bir kavramdır.| ORM nin bir türüdür. Tasarım deseni|
 |Farklı ORM türleri olabilir (Data Mapper, Active Record vb.).	|Veriyi temsil eden nesneler doğrudan veritabanı tablolarına karşılık gelir.
-|veritabanı tablolarını nesne yönelimli programlama dillerindeki nesnelere dönüştürerek veritabanı işlemlerini daha kolay ve doğal hale getirmektir.|
+|Veritabanı tablolarını nesne yönelimli programlama dillerindeki nesnelere dönüştürerek veritabanı işlemlerini daha kolay ve doğal hale getirmektir.|
 
 ORM, veritabanı ve nesne yönelimli programlama dilleri arasında bir köprüdür.
 
