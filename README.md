@@ -15,6 +15,8 @@ Böylece her defasında yeniden kod satırı oluşturmaya gerek kalmadan hızlı
 
 gibi avantajları bulunmaktadır.
 
+# PHP FrameWork
+
 ## Laravel 
 Modern php uygulamaları oluşturmak için kullanılır.
 
@@ -83,3 +85,16 @@ Laravel’in kendi şablon motoru (Blade) sayesinde dinamik HTML sayfaları kola
 Bu, PHP ve HTML’yi birleştirmeyi çok daha pratik hale getirir.
 
 
+|  ORM |  Active Record  |
+|-----------|---------|
+|Genel bir kavramdır.| ORM nin bir türüdür. Tasarım deseni|
+|Farklı ORM türleri olabilir (Data Mapper, Active Record vb.).	|Veriyi temsil eden nesneler doğrudan veritabanı tablolarına karşılık gelir.
+|veritabanı tablolarını nesne yönelimli programlama dillerindeki nesnelere dönüştürerek veritabanı işlemlerini daha kolay ve doğal hale getirmektir.|
+
+ORM, veritabanı ve nesne yönelimli programlama dilleri arasında bir köprüdür.
+
+Active Record, bu köprüyü kurmak için kullanılan bir tasarım desenidir.
+
+ ORM bir tekniktir, Active Record ise bu tekniğin bir uygulama şeklidir (desenidir). Yani, Active Record bir ORM desenidir.
+
+  Genel ORM araçları(Entity framework, Laravel Eloquent) Active Record'a göre daha fazla esneklik sunabilir, daha karmaşık veritabanı yapılarını ve sorgularını destekleyebilir. Active Record ise daha çok hızlı ve basit veritabanı işlemleri için uygundur.
