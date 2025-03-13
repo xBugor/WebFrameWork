@@ -7,13 +7,11 @@ Böylece her defasında yeniden kod satırı oluşturmaya gerek kalmadan hızlı
 
 ## Avantajlar
 - Kodları hızlı bir şekilde yazmayı sağlar.
-- SQL injection XSS gibi saldıralara karşı korunma sağlar.
 - Kod düzeni sağlar.
 - Ölçeklenebirlik
+- SQL injection XSS gibi saldıralara karşı korunma sağlar.
 - Açık kaynak kodludur. Kodları değiştirip,güncelleyip kullanabilirsiniz.
 
-
-gibi avantajları bulunmaktadır.
 
 # PHP FrameWork
 
