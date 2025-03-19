@@ -1,22 +1,18 @@
-# Web FrameWork Nedir?
+                                                                           # Web FrameWork Nedir?
 
 Web frameworkleri yazılım geliştiricileri tarafından önceden yazılmış kütüphanelerin toplanıp oluşturulan  dökümantasyonlardır.
-Sık kullanılan kodları sayfa sayfa yeniden yazmaktan kurtulmaktır.
-Hazır kodlar gibi düşünebiliriz.
-Böylece her defasında yeniden kod satırı oluşturmaya gerek kalmadan hızlı bir şekilde amacımıza ulaşmamız sağlanır.
+Sık kullanılan kodları sayfa sayfa yeniden yazmadan hızlıca amacımıza ulaştıran hazır kodlar gibi düşünebilirsiniz.
+
 
 ## Avantajlar
-- Kodları hızlı bir şekilde yazmayı sağlar.
+- Hızlı kod yazmayı sağlar.
 - Kod düzeni sağlar.
-- Ölçeklenebirlik
-- SQL injection XSS gibi saldıralara karşı korunma sağlar.
+- Bakım kolaylığı:  Güncellemeler ve iyileştirmeler genellikle framework tarafından yapılır, bu da geliştiricinin bakım yükünü azaltır.
+- Ölçeklenebirlik , uygulamanın artan kullanıcı sayısı ve veri yüküyle başa çıkabilme yeteneğidir.
 - Açık kaynak kodludur. Kodları değiştirip,güncelleyip kullanabilirsiniz.
-
-
-# PHP FrameWork
+- SQL injection XSS gibi saldıralara karşı korunma sağlar.
 
 ## Laravel 
-Modern php uygulamaları oluşturmak için kullanılır.
 
 * Dil : PHP
 * [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
@@ -25,25 +21,35 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * Ölçeklenebilirlik: Modüler yapı ve yerleşik araçlar ölçeklenebilir uygulama geliştirmeyi destekler.
 
 * Güçlü bir topluluğa sahib olan laravel ilk defa öğrenmek isteyenler için [laracats](https://laracasts.com/)  adında bir platform kurmuştur eğtim alabilirsiniz.
-* **Object Relational Mapping** kullanarak çok karmaşık ve uzun sql komutlarını nesneye yönelik programlama kullanarak daha kısa ve verimli şekilde kullanmamıza olanak sağlar.(bknz: **Elequent ORM**)
-* Güvenlik: CLI komutlarını güvenli bir şekilde yürütmek için SSH (Güvenli Kabuk) kullanır.
+* **Object Relational** Mapping kullanarak çok karmaşık ve uzun sql komutlarını nesneye yönelik programlama kullanarak daha kısa ve verimli şekilde kullanmamıza olanak sağlar.(bknz: **Elequent ORM**)
+* **Routing (Yönlendirme)**: Laravel, URL yönlendirmeleri için oldukça esnek ve güçlü bir yönlendirme sistemi sunar. Route'lar kolayca tanımlanabilir ve yönetilebilir.
 * **Blade Templating**:   HTML ve PHP kodlarını karıştırarak dinamik sayfalar oluşturur.
 * **Middleware (Ara Katman)**: Middleware, gelen HTTP isteklerini filtrelemeye olanak tanır.
-* **Migrations ve Seeding**: Laravel, veritabanı sürümlemeyi ve test amaçlı veritabanı verisi eklemeyi kolaylaştıran migration ve seeding özellikleri sunar.
+* **Migrations ve Seeding**: Laravel, veritabanı sürümlemeyi ve test amaçlı veritabanı verisi eklemeyi kolaylaştıran migration ve seeding özellikleri sunar. Değişiklikleri yönetmek migrations,veritabanına başlangıç verisi eklemeye seeding.
 * **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
+* **Authentication ve Authorization** Kullanıcı girişi, yetkilendirme ve şifreleme işlemleri için hazır araçlar sunar. [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze)
+* **Queues ve Jobs**: Laravel, arka planda işlem yapmayı sağlayan Queue ve Job yapısını destekler. Bu, zaman alan görevleri (örneğin, e-posta gönderme, video işleme) kullanıcı etkileşimi dışında çalıştırılmasını sağlar.
+* **Laravel Forge ve Envoyer**: Laravel Forge, Laravel projelerini sunuculara dağıtmayı otomatikleştiren bir platformdur. Envoyer ise Laravel uygulamaları için sıfır kesintiyle dağıtım yapmayı sağlar.
+* **Laravel Ecosystem**: Laravel ekosistemi, Laravel Passport (API Authentication), Laravel Horizon (Queue yönetimi), Laravel Nova (Admin paneli) gibi bir dizi araç ve paketle genişletilebilir.
+* **API Development**: Laravel, RESTful API geliştirme için güçlü bir altyapı sunar. API'lar kolayca oluşturulabilir, doğrulama yapılabilir ve JWT (JSON Web Token) ile güvenlik sağlanabilir.
+
+* **Güvenlik**: CLI komutlarını güvenli bir şekilde yürütmek için SSH (Güvenli Kabuk) kullanır.
+
+
 ## Symfony
 
 * Dil : PHP
-* **Modülerlik**: Symfony, bağımsız olarak kullanılabilen bir dizi bileşen sunar. Yani, sadece ihtiyaç duyduğunuz bileşenleri projeye dahil edebilirsiniz.
+* Modüler ve genişletilebir bir yapıya sahitir.
 * [MVC](https://github.com/xBugor/MVC "MVC NEDİR") yapısıyla çalışır.
 * Öğrenmesi zordur.
 * Büyük ve kurumsal işlemlerde rahatça kullanılabilir.
 * Düzenli güncellemeler
 * Yeniden kullanılabilir kod bileşenleri
+* Laravel’in temelinde Symfony bileşenleri yer alır.
+* Symfony Flex – Projeleri daha esnek ve hafif hale getiren bir yönetim sistemidir.
 
 
-
-## Codeignitor 
+## Codeigniter 
 
 * Dil : PHP
 * Hızlı ve hafiftir çünkü kütüphanesi daha az bellek tüketir.
@@ -53,6 +59,7 @@ Modern php uygulamaları oluşturmak için kullanılır.
 * Basitleştirilmiş kod yapısı.
 * Gelişmiş Güvenlik Özelliklerine sahiptirç
 * Active Record sistemi kullanır.
+* Kolay Kurulum – Composer gerektirmez, doğrudan indirip çalıştırabilirsiniz.
 
 PHP frameworkleri yukarıdaki gibidir.
 
@@ -103,3 +110,4 @@ Active Record, bu köprüyü kurmak için kullanılan bir tasarım desenidir.
  ORM bir tekniktir, Active Record ise bu tekniğin bir uygulama şeklidir (desenidir). Yani, Active Record bir ORM desenidir.
 
   Genel ORM araçları(Entity framework, Laravel Eloquent) Active Record'a göre daha fazla esneklik sunabilir, daha karmaşık veritabanı yapılarını ve sorgularını destekleyebilir. Active Record ise daha çok hızlı ve basit veritabanı işlemleri için uygundur.
+
