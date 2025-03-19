@@ -67,9 +67,9 @@ Her birinin avantajları ve dezavantajları aşağıdaki tabloda belirtilmiştir
 
 | Özellik   | Laravel  | Symfony  | CodeIgniter |
 |-----------|---------|----------|-------------|
-| **Öğrenme kolaylığı** | Kolay öğrenilir başta kavramaları kavranması zordur  | Öğrenmesi zordur kapsamlı bilgi gerektirir. | En kolay öğrenilen frameworktür. |
+| **Öğrenme kolaylığı** | Kolay öğrenilir başta kavramaarı anlamak zor gelebilir  | Öğrenmesi zordur kapsamlı bilgi gerektirir. | En kolay öğrenilen frameworktür. |
 |**Performans** | Kaynak kullanımı fazladır. Önbellekleme gibi optimizasyonlarla düzeltilebir.| Diğerlerine göre daha fazla kaynak tüketimini sebep olur. (Modülerlik)| Hafif ve az kaynak kullanımı|
-**Kullanım Alanı**| Büyük ve orta ölçekli projeler için uygundur. API geliştirme için ideal| Kurumsal ve büyük projelerde kullanmak için daha uygundur. Modüler özelleştirilebilir.| Küçük ve orta ölçekli projelerde uygundur. Bütük projelerde eksik kalabilir.|
+**Kullanım Alanı**| Büyük ve orta ölçekli projeler için uygundur. API geliştirme için idealdir.| Kurumsal ve büyük projelerde kullanmak için daha uygundur.| Küçük ve orta ölçekli projelerde uygundur. Büyük projelerde eksik kalabilir.|
 |**MVC Desteği**| MVC vardır|Modüler MVC destekler.|Destek var ama katı değil.
 |**Topluluk desteği**| Çok büyük bir topluluğa sahiptir ve laracasts gibi eğitim kaynakları mevcuttur| Symfony php ekosisteminde yaygındır.| Büyük bir topluluk değil temel destek var|
 | **Güvenlik** | CSRF, XSS, SQL Injection gibi tehditlere karşı güçlü güvenlik önlemleri içerir. |  Yüksek güvenlik standartlarına sahiptir. | Güvenlik mekanizmaları temel düzeydedir.|
@@ -77,6 +77,12 @@ Her birinin avantajları ve dezavantajları aşağıdaki tabloda belirtilmiştir
 | **Özellik Zenginliği** | Task scheduling, queue sistemi, authentication, Blade template engine gibi birçok yerleşik özellik sunar. | Modüler yapısı sayesinde genişletilebilir, her şeyi içerir.  Ancak bazı temel özellikler için ekstra konfigürasyon gerekebilir. | Laravel ve Symfony’ye kıyasla çok az yerleşik özellik içerir. |
 | **ORM Desteği** | Eloquent ORM, kullanımı kolay ve güçlü. |  Doctrine ORM, çok güçlü ancak öğrenmesi daha zor. | ORM yerine Active Record sistemi kullanır, Eloquent kadar güçlü değil. |
 
+## Hangisini Seçmelisin?
+| **İhtiyacın** | **Önerilen Framework** |
+|--------------|------------------------|
+| Küçük ve hızlı bir proje mi yapıyorsun? | **CodeIgniter** |
+| Modern ve ölçeklenebilir bir web uygulaması mı istiyorsun? | **Laravel** |
+| Kurumsal, büyük ve modüler bir uygulama mı geliştireceksin? | **Symfony** |
 
 
 ### Yukardaki bazı kavramlar
@@ -95,6 +101,8 @@ Laravel’de kimlik doğrulama (authentication) yerleşik olarak gelir. Kullanı
 - **Blade Template Engine**
 Laravel’in kendi şablon motoru (Blade) sayesinde dinamik HTML sayfaları kolayca oluşturulabilir.
 Bu, PHP ve HTML’yi birleştirmeyi çok daha pratik hale getirir.
+
+- **ORM VE Active Record**
 
 
 |  ORM |  Active Record  |
