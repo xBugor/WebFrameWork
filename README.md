@@ -85,17 +85,16 @@ Her birinin avantajları ve dezavantajları aşağıdaki tabloda belirtilmiştir
 | Kurumsal, büyük ve modüler bir uygulama mı geliştireceksin? | **Symfony** |
 
 
-### Yukardaki bazı kavramlar
+### Bazı kavramlar
 
-- **Task Scheduling** (Görev Zamanlayıcı)
-Cron job yazmaya gerek kalmadan zamanlanmış görevler tanımlanması.
-   - 1 . Örneğin, her gün belirli bir saatte bir e-posta göndermek için:
+- **Task Scheduling** , belirli görevlerin otomatik olarak belirli zamanlarda çalışmasını sağlar. Laravel, bu işlemi schedule komutuyla yapar. <code> `app/Console/Kernel.php `</code> dosyasına  görevler eklenir. Zamanlanmış görevler, cron job kullanılarak çalıştırılır ve Laravel, bu görevlerin düzenli olarak belirlenen aralıklarla çalışmasını sağlar. Bu özellik, örneğin e-posta gönderme, veritabanı yedekleme gibi işlemler için oldukça kullanışlıdır.
+   -  Örneğin, her gün belirli bir saatte bir e-posta göndermek için:
  
 - **Queue Sistemi (Kuyruk İşlemleri)**
 Yoğun işlemleri (örneğin e-posta gönderme, büyük veri işlemleri) kuyruğa alarak asenkron çalıştırabilir.
 Böylece performans artar.
 
-- **Authentication (Kimlik Doğrulama)** k
+- **Authentication (Kimlik Doğrulama)** 
 Laravel’de kimlik doğrulama (authentication) yerleşik olarak gelir. Kullanıcı giriş-çıkışı, şifre sıfırlama, iki faktörlü kimlik doğrulama gibi işlemler kolayca yapılabilir.
 
 - **Blade Template Engine**
@@ -106,7 +105,7 @@ Bu, PHP ve HTML’yi birleştirmeyi çok daha pratik hale getirir.
 
 
 |  ORM |  Active Record  |
-|-----------|---------|
+|-----------|------------|
 |Genel bir kavramdır.| ORM nin bir türüdür. Tasarım deseni|
 |Farklı ORM türleri olabilir (Data Mapper, Active Record vb.).	|Veriyi temsil eden nesneler doğrudan veritabanı tablolarına karşılık gelir.
 |Veritabanı tablolarını nesne yönelimli programlama dillerindeki nesnelere dönüştürerek veritabanı işlemlerini daha kolay ve doğal hale getirmektir.|
@@ -119,3 +118,13 @@ Active Record, bu köprüyü kurmak için kullanılan bir tasarım desenidir.
 
   Genel ORM araçları(Entity framework, Laravel Eloquent) Active Record'a göre daha fazla esneklik sunabilir, daha karmaşık veritabanı yapılarını ve sorgularını destekleyebilir. Active Record ise daha çok hızlı ve basit veritabanı işlemleri için uygundur.
 
+## KAYNAKÇA
+1. [Scheduling](https://laravel.com/docs/8.x/scheduling)
+
+2. [Symfony](https://symfony.com/doc/current/index.html)
+
+3. [Symfony Github](https://github.com/symfony/symfony-docs)
+
+4. [laracast](https://laracasts.com/)
+
+5. [CodeIngineter](https://codeigniter.com/user_guide/index.html)
