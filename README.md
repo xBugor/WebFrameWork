@@ -1,16 +1,61 @@
 # Web FrameWork Nedir?
 
-Web frameworkleri yazılım geliştiricileri tarafından önceden yazılmış kütüphanelerin toplanıp oluşturulan  dökümantasyonlardır.
+Web frameworkleri yazılım geliştiricileri tarafından önceden yazılmış kütüphanelerin toplanıp oluşturulan  yapılardır.
 Sık kullanılan kodları sayfa sayfa yeniden yazmadan hızlıca amacımıza ulaştıran hazır kodlar gibi düşünebilirsiniz.
 
+Back-end ve Front-end frameworkleri, mobil uygulama geliştirme frameworkleri ve veri bilimi frameworkleri  gibi birçok framework çeşidi bulunmaktadır.
+
+İhtiyaca göre kullanılabilen ve değiştirilebilen genel bir şablondur.
 
 ## Avantajlar
 - Hızlı kod yazmayı sağlar.
-- Kod düzeni sağlar.
+- Kod düzeni sağlar. Anlaşılması ve üzerinde çalışılması çok daha kolaydır
 - Bakım kolaylığı:  Güncellemeler ve iyileştirmeler genellikle framework tarafından yapılır, bu da geliştiricinin bakım yükünü azaltır.
 - Ölçeklenebirlik , uygulamanın artan kullanıcı sayısı ve veri yüküyle başa çıkabilme yeteneğidir.
 - Açık kaynak kodludur. Kodları değiştirip,güncelleyip kullanabilirsiniz.
 - SQL injection XSS gibi saldıralara karşı korunma sağlar.
+
+Geliştirme sürecine başlamadan önce, projeniz için hangi programlama dilinin uygun olacağını seçmeniz gerekir.
+
+# Web Framework Çeşitleri
+
+## 1. Backend (Sunucu Tarafı) Frameworkler
+| Framework       | Dil          | Özellikler |
+|---------------|------------|------------|
+| **Laravel**   | PHP        | MVC yapısı, Blade template engine, güçlü ORM (Eloquent), kolay kimlik doğrulama |
+| **Django**    | Python     | Güçlü güvenlik, [ORM](#Orm) desteği, admin paneli, hızlı geliştirme |
+| **Flask**     | Python     | Minimalist yapı, genişletilebilir, esnek |
+| **Express.js**| JavaScript (Node.js) | Hafif ve hızlı, REST API geliştirmeye uygun |
+| **Spring Boot** | Java     | Mikroservis desteği, kapsamlı güvenlik özellikleri |
+| **Ruby on Rails** | Ruby   | "Convention over Configuration" prensibi, güçlü ORM (Active Record) |
+
+## 2. Frontend (İstemci Tarafı) Frameworkler
+| Framework   | Dil         | Özellikler |
+|------------|------------|------------|
+| **React.js**  | JavaScript | Bileşen tabanlı yapı, sanal DOM, hızlı performans |
+| **Vue.js**    | JavaScript | Kolay öğrenim, esnek yapı, reaktif sistem |
+| **Angular**   | TypeScript | Büyük ölçekli projeler için uygun, güçlü entegrasyonlar |
+| **Svelte**    | JavaScript | Sanal DOM yerine doğrudan derleme, performans avantajı |
+
+## 3. Full-Stack Frameworkler
+| Framework   | Dil         | Özellikler |
+|------------|------------|------------|
+| **Next.js**   | JavaScript | SSR (Sunucu Tarafı Render), React ile uyumlu, SEO dostu |
+| **Nuxt.js**   | JavaScript | Vue.js tabanlı, SSR ve statik site desteği |
+| **Meteor.js** | JavaScript | Gerçek zamanlı uygulamalar için ideal, full-stack çözüm |
+| **Blitz.js**  | JavaScript | Next.js tabanlı, tam entegre full-stack çözüm |
+
+## 4. UI Frameworkler (CSS & UI Kütüphaneleri)
+| Framework     | Kullanım Alanı | Özellikler |
+|--------------|---------------|------------|
+| **Bootstrap** | CSS & UI | Responsive tasarım, hazır bileşenler, kolay grid sistemi |
+| **Tailwind CSS** | CSS Utility | Düşük seviyeli sınıflarla esnek stil oluşturma |
+| **Material UI** | React UI Kit | Google’ın Material Design sistemine uygun React bileşenleri |
+| **Ant Design** | React UI Kit | Büyük ölçekli projeler için kapsamlı bileşenler |
+| **Bulma** | CSS & UI | Modern ve hafif CSS frameworkü |
+
+
+Bu yazımızda php frameworklerine detaylı yer verilmiştir.
 
 ## Laravel 
 
@@ -21,7 +66,7 @@ Sık kullanılan kodları sayfa sayfa yeniden yazmadan hızlıca amacımıza ula
 * Ölçeklenebilirlik: Modüler yapı ve yerleşik araçlar ölçeklenebilir uygulama geliştirmeyi destekler.
 
 * Güçlü bir topluluğa sahib olan laravel ilk defa öğrenmek isteyenler için [laracats](https://laracasts.com/)  adında bir platform kurmuştur eğtim alabilirsiniz.
-* **Object Relational** Mapping kullanarak çok karmaşık ve uzun sql komutlarını nesneye yönelik programlama kullanarak daha kısa ve verimli şekilde kullanmamıza olanak sağlar.(bknz: **Elequent ORM**)
+* **Object Relational Mapping** kullanarak çok karmaşık ve uzun sql komutlarını nesneye yönelik programlama kullanarak daha kısa ve verimli şekilde kullanmamıza olanak sağlar.(bknz: **Elequent ORM**) [ORM](https://github.com/xBugor/ORM)
 * **Routing (Yönlendirme)**: Laravel, URL yönlendirmeleri için oldukça esnek ve güçlü bir yönlendirme sistemi sunar. Route'lar kolayca tanımlanabilir ve yönetilebilir.
 * **Blade Templating**:   HTML ve PHP kodlarını karıştırarak dinamik sayfalar oluşturur.
 * **Middleware (Ara Katman)**: Middleware, gelen HTTP isteklerini filtrelemeye olanak tanır.
@@ -29,9 +74,9 @@ Sık kullanılan kodları sayfa sayfa yeniden yazmadan hızlıca amacımıza ula
 * **Artisan CLI**, Laravel’in güçlü komut satırı aracıdır. Veri tabanı oluşturma,çalıştırma, model oluşturma vs gibi işlemleri yapabilirsiniz.
 * **Authentication ve Authorization** Kullanıcı girişi, yetkilendirme ve şifreleme işlemleri için hazır araçlar sunar. [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze)
 * **Queues ve Jobs**: Laravel, arka planda işlem yapmayı sağlayan Queue ve Job yapısını destekler. Bu, zaman alan görevleri (örneğin, e-posta gönderme, video işleme) kullanıcı etkileşimi dışında çalıştırılmasını sağlar.
-* **Laravel Forge ve Envoyer**: Laravel Forge, Laravel projelerini sunuculara dağıtmayı otomatikleştiren bir platformdur. Envoyer ise Laravel uygulamaları için sıfır kesintiyle dağıtım yapmayı sağlar.
+* **Laravel Forge ve Envoyer**: Laravel Forge, Laravel projelerini sunuculara dağıtmayı otomatikleştiren bir platformdur. Envoyer ise Laravel uygulamaları için sıfır kesintiyle dağıtım yapmayı sağlar. Kullanıcılar, uygulamanıza her yeni güncelleme geldiğinde, kesinti yaşanmaz.
 * **Laravel Ecosystem**: Laravel ekosistemi, Laravel Passport (API Authentication), Laravel Horizon (Queue yönetimi), Laravel Nova (Admin paneli) gibi bir dizi araç ve paketle genişletilebilir.
-* **API Development**: Laravel, RESTful API geliştirme için güçlü bir altyapı sunar. API'lar kolayca oluşturulabilir, doğrulama yapılabilir ve JWT (JSON Web Token) ile güvenlik sağlanabilir.
+
 
 * **Güvenlik**: CLI komutlarını güvenli bir şekilde yürütmek için SSH (Güvenli Kabuk) kullanır.
 
@@ -100,11 +145,18 @@ Laravel’de kimlik doğrulama (authentication) yerleşik olarak gelir. Kullanı
 - **Blade Template Engine**
 Laravel’in kendi şablon motoru (Blade) sayesinde dinamik HTML sayfaları kolayca oluşturulabilir.
 Bu, PHP ve HTML’yi birleştirmeyi çok daha pratik hale getirir.
+- **MiddleWare** 
+Middleware, Laravel'de HTTP isteklerini kontrol etmek için kullanılır.
+Middleware ile istekleri filtreleyebilir, değiştirebilir ve yanıtları işleyebilirsiniz.
+php artisan make:middleware komutuyla middleware oluşturabilirsiniz.
+Middleware, Kernel.php dosyasında tanımlanır ve sonra route veya route grubu üzerinde kullanılabilir.
 
-- **ORM VE Active Record**
+- **Route** web uygulamanızdaki URL taleplerine yanıt veren ve işlevsel işlemler yapan bir yapıdır. Laravel'in yönlendirme (routing) sistemi, gelen HTTP isteklerini belirli bir controller metoduna veya closure (anonim fonksiyon) ile eşleştirir.
+
+ #### **ORM VE Active Record**
 
 
-|  ORM |  Active Record  |
+|  # ORM |  Active Record  |
 |-----------|------------|
 |Genel bir kavramdır.| ORM nin bir türüdür. Tasarım deseni|
 |Farklı ORM türleri olabilir (Data Mapper, Active Record vb.).	|Veriyi temsil eden nesneler doğrudan veritabanı tablolarına karşılık gelir.
@@ -128,3 +180,5 @@ Active Record, bu köprüyü kurmak için kullanılan bir tasarım desenidir.
 4. [laracast](https://laracasts.com/)
 
 5. [CodeIngineter](https://codeigniter.com/user_guide/index.html)
+
+6. [geeksforgeeks](https://www.geeksforgeeks.org/top-frameworks-for-web-applications/#1-ruby-on-rails)
